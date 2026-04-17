@@ -1,0 +1,105 @@
+<!-- CHECKPOINT 2
+
+Gerenciador de Tarefas (To-Do List)
+
+========================================== -->
+
+O GRANDE DESAFIO
+o sistema deverá permitir:
+
+1. Adicionar novas tarefas.
+2. listar todas as tarefas salvas.
+3. marcar uma tarefa como concluída.
+4. fechar o programa sem perder os dados.
+
+=====================================================
+
+A ARQUITETURA DO SISTEMA
+
+Para que este projeto tenha nível de portfólio profissional, não podemos jogar todo o código em um único arquivo. Vamos usar a
+Modularização!
+
+tarefas.py
+O Motor Lógico
+Aqui ficarão as funções (def) que manipulam a lista,
+marcam tarefas como concluídas e salvam os dados no
+arquivo JSON.
+
+
+main.py
+O Painel do Usuário
+Aqui ficará o Menu Interativo (while True, match case), as
+capturas de input e as importações.
+
+=====================================================
+
+<!-- ESTRUTURA DE DADOS
+
+Antes de escrever a primeira linha de código, o Arquiteto de
+Software define como os dados serão guardados.
+Usaremos uma Lista de Dicionários. Cada tarefa terá o texto e
+um status indicando se foi concluída.
+
+[
+    { 
+        "descricao" : "estudar python" ,
+        "concluida" : True
+    },
+    {
+        "descricao" : "pagar a luz" ,
+        "concluida" : False
+    }
+]
+===================================================== -->
+
+<!-- FASE 1: O PRODUTO MÍNIMO (MVP) -->
+
+<!-- Nunca construímos tudo de uma vez. Comece pelo básico que funciona! -->
+
+<!-- 1. A Lista: No tarefas.py, crie uma lista vazia chamada lista_tarefas = []. -->
+
+<!-- 2. Adicionar: Crie a função adicionar_tarefa(descricao). Ela monta o dicionário (com concluida: False) e dá o
+.append() na lista. -->
+
+<!-- 3. Listar: Crie a função listar_tarefas(). Use um for para percorrer a lista e imprimir as descrições. -->
+
+<!-- 4. O Menu: No main.py, importe as funções e crie o while True com as opções: Adicionar, Listar ou Sair. -->
+
+=====================================================
+<!-- 
+FASE 2: ATUALIZAÇÃO (UPDATE)
+
+ O MVP funcionou? O sistema adiciona e lista? Vamos adicionar a marcação de conclusão. 
+
+1. Melhorando a Listagem: Na função listar_tarefas(), altere para imprimir o Índice numérico e um símbolo
+visual (ex: [X] se True, [ ] se False).
+
+2. A Atualização: Crie a função concluir_tarefa(indice). Ela acessa a lista naquele índice específico e muda a
+chave "concluida" para True.
+
+3. A Interface: No main.py, crie a opção 3 no menu. Peça o número ao usuário, converta para inteiro e chame a
+função!
+
+Dica de Segurança: Usem try/except IndexError na função concluir! -->
+
+=====================================================
+
+FASE 3: PERSISTÊNCIA DE DADOS
+
+O sistema está incrível, mas se desligarmos, tudo some! Vamos plugar o Banco Local.
+
+1. A Biblioteca: No topo do tarefas.py, importe a biblioteca json.
+
+2. Salvando: Crie a função salvar_dados(). Use with open("dados.json", "w") e json.dump() para gravar a lista
+inteira.
+
+3. Carregando: Crie a função carregar_dados(). Use o modo leitura ("r") e json.load() com um try/except
+FileNotFoundError.
+
+4. A Integração: Chame carregar_dados() no início do main.py, e chame salvar_dados() toda vez que uma tarefa
+for adicionada ou concluída!
+
+=====================================================
+
+Fim do Bloco 1!
+Vocês construíram um software completo. Parabéns!
