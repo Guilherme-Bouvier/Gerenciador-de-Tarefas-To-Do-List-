@@ -2,11 +2,11 @@
 
 Projeto desenvolvido como parte do Checkpoint 2, com foco em boas práticas de organização de código, modularização e persistência de dados.
 
-##📌 Descrição
+## 📌 Descrição
 
 Este projeto consiste em um sistema simples de gerenciamento de tarefas via terminal. O usuário pode adicionar, listar e marcar tarefas como concluídas, com salvamento automático em arquivo para manter os dados mesmo após o encerramento do programa.
 
-##🚀 Funcionalidades
+## 🚀 Funcionalidades
 
 O sistema permite:
 
@@ -18,12 +18,13 @@ O sistema permite:
 
 O projeto foi estruturado utilizando modularização, separando responsabilidades em diferentes arquivos:
 
-📁 projeto/
+## 📁 projeto/
 │
 ├── tarefas.py   # Motor lógico (regras de negócio)
 ├── main.py      # Interface com o usuário (menu interativo)
 └── dados.json   # Armazenamento das tarefas
-🔧 tarefas.py — Motor Lógico
+
+## 🔧 tarefas.py — Motor Lógico
 
 Responsável por:
 
@@ -31,7 +32,8 @@ Gerenciar a lista de tarefas
 Adicionar novas tarefas
 Marcar tarefas como concluídas
 Salvar e carregar dados do arquivo JSON
-🖥️ main.py — Painel do Usuário
+
+## 🖥️ main.py — Painel do Usuário
 
 Responsável por:
 
@@ -39,7 +41,7 @@ Exibir o menu interativo
 Capturar entradas do usuário
 Chamar as funções do módulo lógico
 
-##🧠 Estrutura de Dados
+## 🧠 Estrutura de Dados
 
 As tarefas são armazenadas como uma lista de dicionários, no seguinte formato:
 
@@ -55,9 +57,9 @@ As tarefas são armazenadas como uma lista de dicionários, no seguinte formato:
 ]
 
 
-#🧩 Etapas do Desenvolvimento
+# 🧩 Etapas do Desenvolvimento
 
-##🔹 Fase 1: MVP (Produto Mínimo Viável)
+## 🔹 Fase 1: MVP (Produto Mínimo Viável)
 Criação da lista de tarefas
 Função para adicionar tarefas
 Função para listar tarefas
@@ -66,7 +68,7 @@ Adicionar
 Listar
 Sair
 
-##🔹 Fase 2: Atualização (Update)
+## 🔹 Fase 2: Atualização (Update)
 Exibição com índice e status:
 [X] tarefa concluída
 [ ] tarefa pendente
@@ -75,23 +77,23 @@ Nova opção no menu para marcar tarefas
 
 💡 Dica: uso de try/except IndexError para evitar erros ao acessar índices inválidos.
 
-##🔹 Fase 3: Persistência de Dados
+## 🔹 Fase 3: Persistência de Dados
 Uso da biblioteca json
 Salvamento automático em dados.json
 Carregamento dos dados ao iniciar o sistema
 
 
-##💻 Como Executar
+## 💻 Como Executar
 Clone ou baixe o projeto
 Certifique-se de ter o Python instalado
 Execute o arquivo principal:
 python main.py
 
-##🛠️ Tecnologias Utilizadas
+## 🛠️ Tecnologias Utilizadas
 Python 3
 JSON (para persistência de dados)
 
-##🎯 Objetivo do Projeto
+## 🎯 Objetivo do Projeto
 
 Este projeto tem como objetivo consolidar conhecimentos em:
 
@@ -101,6 +103,6 @@ Tratamento de erros (try/except)
 Manipulação de arquivos
 Organização de projetos
 
-##👨‍💻 Autor
+## 👨‍💻 Autor
 Guilherme Bouvier
 Desenvolvido como atividade acadêmica (Checkpoint 2).
