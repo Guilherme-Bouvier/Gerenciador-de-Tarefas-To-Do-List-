@@ -1,4 +1,4 @@
-#✅ Gerenciador de Tarefas (To-Do List)
+# ✅ Gerenciador de Tarefas (To-Do List)
 
 Projeto desenvolvido como parte do Checkpoint 2, com foco em boas práticas de organização de código, modularização e persistência de dados.
 
