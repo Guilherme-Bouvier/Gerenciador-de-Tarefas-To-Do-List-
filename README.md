@@ -18,12 +18,6 @@ O sistema permite:
 
 O projeto foi estruturado utilizando modularização, separando responsabilidades em diferentes arquivos:
 
-## 📁 projeto/
-│
-├── tarefas.py   # Motor lógico (regras de negócio)
-├── main.py      # Interface com o usuário (menu interativo)
-└── dados.json   # Armazenamento das tarefas
-
 ## 🔧 tarefas.py — Motor Lógico
 
 Responsável por:
