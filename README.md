@@ -90,14 +90,14 @@ python main.py<br>
 Python 3<br>
 JSON (persistência de dados)<br>
 
-##🚧 Melhorias Futuras<br>
+## 🚧 Melhorias Futuras<br>
 Interface gráfica (GUI)<br>
 Sistema de usuários<br>
 Filtro de tarefas (pendentes/concluídas)<br>
 Integração com banco de dados (SQLite ou PostgreSQL)<br>
 Versão web ou mobile<br>
 
-##🎯 Objetivo do Projeto<br>
+## 🎯 Objetivo do Projeto<br>
 Consolidar conhecimentos em:<br>
 
 Estruturas de dados (listas e dicionários)<br>
@@ -106,6 +106,6 @@ Tratamento de erros (try/except)<br>
 Manipulação de arquivos<br>
 Organização de projetos<br>
 
-##👨‍💻 Autor<br>
+## 👨‍💻 Autor<br>
 Guilherme Bouvier<br>
 Projeto desenvolvido como atividade acadêmica (Checkpoint 2)<br>
