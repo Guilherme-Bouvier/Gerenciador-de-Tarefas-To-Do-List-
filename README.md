@@ -5,107 +5,107 @@ Projeto desenvolvido como parte do Checkpoint 2, com foco em boas práticas de p
  Um sistema de gerenciamento de tarefas via terminal, com arquitetura modular e persistência em JSON.
 Permite ao usuário adicionar, visualizar, concluir e remover tarefas de forma simples, mantendo os dados salvos mesmo após o encerramento do programa.
 
-## 🚀 Funcionalidades
+## 🚀 Funcionalidades<br>
 
-➕ Adicionar novas tarefas
-📋 Listar todas as tarefas
-✅ Marcar tarefas como concluídas
-❌ Remover tarefas
-💾 Persistência automática em arquivo (tarefas.json)
-🏗️ Arquitetura do Projeto
+➕ Adicionar novas tarefas <br>
+📋 Listar todas as tarefas<br>
+✅ Marcar tarefas como concluídas<br>
+❌ Remover tarefas<br>
+💾 Persistência automática em arquivo (tarefas.json)<br>
+🏗️ Arquitetura do Projeto<br>
 
 O projeto foi estruturado utilizando modularização, separando responsabilidades:
 
-## 🔧 tarefas.py — Motor Lógico
-Responsável por:
+## 🔧 tarefas.py — Motor Lógico<br>
+Responsável por:<br>
 
-Gerenciar a lista de tarefas
-Adicionar novas tarefas
-Marcar tarefas como concluídas
-Remover tarefas
-Salvar e carregar dados do arquivo JSON
+Gerenciar a lista de tarefas<br>
+Adicionar novas tarefas<br>
+Marcar tarefas como concluídas<br>
+Remover tarefas<br>
+Salvar e carregar dados do arquivo JSON<br>
 
-## 🖥️ main.py — Interface do Usuário
-Responsável por:
+## 🖥️ main.py — Interface do Usuário<br>
+Responsável por:<br>
 
-Exibir o menu interativo
-Capturar entradas do usuário
-Chamar as funções do módulo lógico
+Exibir o menu interativo<br>
+Capturar entradas do usuário<br>
+Chamar as funções do módulo lógico<br>
 
-## 🧠 Estrutura de Dados
-As tarefas são armazenadas como uma lista de dicionários no formato:
+## 🧠 Estrutura de Dados<br>
+As tarefas são armazenadas como uma lista de dicionários no formato:<br>
 
-[
-    {
-        "descricao": "estudar python",
-        "concluida": true
-    },
-    {
-        "descricao": "pagar a luz",
-        "concluida": false
-    }
-]
+[<br>
+    {<br>
+        "descricao": "estudar python",<br>
+        "concluida": true<br>
+    },<br>
+    {<br>
+        "descricao": "pagar a luz",<br>
+        "concluida": false<br>
+    }<br>
+]<br>
 
-## 🧩 Etapas do Desenvolvimento
+## 🧩 Etapas do Desenvolvimento<br>
 
-## 🔹 Fase 1: MVP (Produto Mínimo Viável)
-Criação da lista de tarefas
-Função para adicionar tarefas
-Função para listar tarefas
-Menu básico com opções:
-Adicionar
-Listar
-Sair
+## 🔹 Fase 1: MVP (Produto Mínimo Viável)<br>
+Criação da lista de tarefas<br>
+Função para adicionar tarefas<br>
+Função para listar tarefas<br>
+Menu básico com opções:<br>
+Adicionar<br>
+Listar<br>
+Sair<br>
 
-## 🔹 Fase 2: Atualização
-Exibição com índice e status:
-[X] tarefa concluída
-[ ] tarefa pendente
-Implementação da função para concluir tarefas
-Nova opção no menu para marcar tarefas
+## 🔹 Fase 2: Atualização<br>
+Exibição com índice e status:<br>
+[X] tarefa concluída<br>
+[ ] tarefa pendente<br>
+Implementação da função para concluir tarefas<br>
+Nova opção no menu para marcar tarefas<br>
 
-💡 Uso de try/except IndexError para evitar erros ao acessar índices inválidos.
+💡 Uso de try/except IndexError para evitar erros ao acessar índices inválidos.<br>
 
-## 🔹 Fase 3: Persistência de Dados
-Utilização da biblioteca json
-Salvamento automático em tarefas.json
-Carregamento dos dados ao iniciar o sistema
+## 🔹 Fase 3: Persistência de Dados<br>
+Utilização da biblioteca json<br>
+Salvamento automático em tarefas.json<br>
+Carregamento dos dados ao iniciar o sistema<br>
 
-## 📷 Exemplo de Uso
-=== GERENCIADOR DE TAREFAS ===
+## 📷 Exemplo de Uso<br>
+=== GERENCIADOR DE TAREFAS ===<br>
 
-1 - Adicionar tarefa
-2 - Listar tarefas
-3 - Concluir tarefa
-4 - Remover tarefa
-5 - Sair
+1 - Adicionar tarefa<br>
+2 - Listar tarefas<br>
+3 - Concluir tarefa<br>
+4 - Remover tarefa<br>
+5 - Sair<br>
 
-## 💻 Como Executar
-Clone ou baixe este repositório
-Certifique-se de ter o Python instalado
-Execute o arquivo principal:
-python main.py
+## 💻 Como Executar<br>
+Clone ou baixe este repositório<br>
+Certifique-se de ter o Python instalado<br>
+Execute o arquivo principal:<br>
+python main.py<br>
 
-## 🛠️ Tecnologias Utilizadas
-Python 3
-JSON (persistência de dados)
+## 🛠️ Tecnologias Utilizadas<br>
+Python 3<br>
+JSON (persistência de dados)<br>
 
-##🚧 Melhorias Futuras
-Interface gráfica (GUI)
-Sistema de usuários
-Filtro de tarefas (pendentes/concluídas)
-Integração com banco de dados (SQLite ou PostgreSQL)
-Versão web ou mobile
+##🚧 Melhorias Futuras<br>
+Interface gráfica (GUI)<br>
+Sistema de usuários<br>
+Filtro de tarefas (pendentes/concluídas)<br>
+Integração com banco de dados (SQLite ou PostgreSQL)<br>
+Versão web ou mobile<br>
 
-##🎯 Objetivo do Projeto
-Consolidar conhecimentos em:
+##🎯 Objetivo do Projeto<br>
+Consolidar conhecimentos em:<br>
 
-Estruturas de dados (listas e dicionários)
-Funções e modularização
-Tratamento de erros (try/except)
-Manipulação de arquivos
-Organização de projetos
+Estruturas de dados (listas e dicionários)<br>
+Funções e modularização<br>
+Tratamento de erros (try/except)<br>
+Manipulação de arquivos<br>
+Organização de projetos<br>
 
-##👨‍💻 Autor
-Guilherme Bouvier
-Projeto desenvolvido como atividade acadêmica (Checkpoint 2)
+##👨‍💻 Autor<br>
+Guilherme Bouvier<br>
+Projeto desenvolvido como atividade acadêmica (Checkpoint 2)<br>
