@@ -35,9 +35,9 @@ Chamar as funções do módulo lógico<br>
 ## 🧠 Estrutura de Dados<br>
 As tarefas são armazenadas como uma lista de dicionários no formato:<br>
 
-[<br>
+[
     {
-        "descricao": "estudar python", <br> 
+        "descricao": "estudar python",
         "concluida": true
     },
     {
