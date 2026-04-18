@@ -1,7 +1,7 @@
 import json
 import os
-lista_tarefas = []
 
+lista_tarefas = []
 
 
 def adicionar_tarefa(descricao):
@@ -20,6 +20,7 @@ def adicionar_tarefa(descricao):
     lista_tarefas.append(tarefa)
     salvando_arquivo()
     print("Tarefa criada com sucesso!")
+
 
 def listar_tarefas():
     if not lista_tarefas:
@@ -40,6 +41,7 @@ def concluir_tarefa(indice):
     except IndexError:
         print("Índice inválido. Tente novamente.")
 
+
 def remover_tarefa(indice):
     try:
         lista_tarefas.pop(indice)
@@ -57,7 +59,8 @@ def salvando_arquivo ():
 
     except Exception as e:
         print(f"Erro ao salvar tarefas: {e}")
-    
+
+
 def carregar_dados():
     global lista_tarefas
     try:
